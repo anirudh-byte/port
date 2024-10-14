@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anirudh Chaudhari - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    .about-section, .skills-section, .projects-section, .contact-section {
+      text-align: center;
+    }
+
+    .project-item {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Anirudh Chaudhari</h1>
+      <p>3rd Year B.Tech CSE Student | Aspiring AI/ML Engineer</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I'm Anirudh Chaudhari, a 3rd-year B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning. I am passionate about solving complex problems through innovative tech solutions.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: C, C++, Python, R</li>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>AI/ML Tools: OpenCV, YOLOv5, TensorFlow</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>AI-Based Traffic Control System</h3>
+        <p>A real-time AI-powered system to optimize traffic light control using YOLOv5 and Arduino.</p>
+      </div>
+      <div class="project-item">
+        <h3>Grocery Delivery App</h3>
+        <p>An intuitive mobile app designed for grocery delivery with efficient route optimization and user-friendly UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: anirudhchaudhari@example.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/anirudhchaudhari">linkedin.com/in/anirudhchaudhari</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Anirudh Chaudhari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple script for smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
